@@ -24,7 +24,9 @@ const schema = buildSchema(`
     
     type Query {
          getIcons(id:ID): Icons
+         getIconsList: [Icons]
     }
+   
     
     input IconsInput{
         id: ID

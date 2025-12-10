@@ -25,9 +25,11 @@ const resolvers = {
         if (!data) return null;
         return new Icons(id, data);
     },
+    getIconsList: () => {
+        return Object.entries(iconHolder).map(([id,data])=> new Icons(id,data));
+    },
 
     setIcons: ({ input }) => {
-        console.log("s")
         const id = nanoid();      // always generate new ID
         iconHolder[id] = { ...input };
 
