@@ -2,9 +2,9 @@
   "name": "iconlist--graphql",
   "version": "1.0.0",
   "description": "a standard babel setup",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon ./index.js --exec babel-node -e js"
+    "start": "nodemon server.js --exec babel-node -e js"
   },
   "keywords": [
     "babel",
